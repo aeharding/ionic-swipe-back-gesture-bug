@@ -4,17 +4,21 @@ import { IonReactRouter } from "@ionic/react-router";
 
 import { Route, Redirect } from "react-router";
 
-import FooUserPage from "./pages/FooUserPage";
-import BazPage from "./pages/BazPage";
+import NamePage from "./pages/NamePage";
+import NameDetailsPage from "./pages/NameDetailsPage";
 
 function Example() {
   return (
     <IonReactRouter>
       <IonRouterOutlet>
-        <Redirect exact path="/" to="/foo/alex" />
+        <Redirect exact path="/" to="/one" />
 
-        <Route path="/foo/:user" render={() => <FooUserPage />} exact={true} />
-        <Route path="/baz" render={() => <BazPage />} exact={true} />
+        <Route path="/:name" render={() => <NamePage />} exact={true} />
+        <Route
+          path="/:name/details"
+          render={() => <NameDetailsPage />}
+          exact={true}
+        />
       </IonRouterOutlet>
     </IonReactRouter>
   );
