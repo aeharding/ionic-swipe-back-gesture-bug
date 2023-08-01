@@ -1,5 +1,5 @@
 import React from "react";
-import { setupIonicReact, IonApp, IonContent } from "@ionic/react";
+import { setupIonicReact, IonApp } from "@ionic/react";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
