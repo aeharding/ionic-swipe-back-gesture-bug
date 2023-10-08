@@ -2,23 +2,99 @@ import React from "react";
 import {
   IonContent,
   IonHeader,
+  IonItem,
+  IonItemOption,
+  IonItemOptions,
+  IonItemSliding,
+  IonLabel,
   IonPage,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import { useParams } from "react-router";
 
 const NameDetailsPage = () => {
-  const { name } = useParams<{ name: string }>();
-
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>/{name}/details</IonTitle>
+          <IonTitle>/details</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>Swipe back broken!</IonContent>
+      <IonContent>
+        <div>
+          Try to swipe back. Observe the ion-item-sliding is sometimes triggered
+        </div>
+
+        <IonItemSliding>
+          <IonItemOptions side="start">
+            <IonItemOption color="success">Archive</IonItemOption>
+          </IonItemOptions>
+
+          <IonItem>
+            <IonLabel>Sliding Item with Start Options</IonLabel>
+          </IonItem>
+        </IonItemSliding>
+
+        <IonItemSliding>
+          <IonItemOptions side="start">
+            <IonItemOption color="success">Archive</IonItemOption>
+          </IonItemOptions>
+
+          <IonItem>
+            <IonLabel>Sliding Item with Start Options</IonLabel>
+          </IonItem>
+        </IonItemSliding>
+
+        <IonItemSliding>
+          <IonItemOptions side="start">
+            <IonItemOption color="success">Archive</IonItemOption>
+          </IonItemOptions>
+
+          <IonItem>
+            <IonLabel>Sliding Item with Start Options</IonLabel>
+          </IonItem>
+        </IonItemSliding>
+
+        <IonItemSliding>
+          <IonItemOptions side="start">
+            <IonItemOption color="success">Archive</IonItemOption>
+          </IonItemOptions>
+
+          <IonItem>
+            <IonLabel>Sliding Item with Start Options</IonLabel>
+          </IonItem>
+        </IonItemSliding>
+
+        <IonItemSliding>
+          <IonItemOptions side="start">
+            <IonItemOption color="success">Archive</IonItemOption>
+          </IonItemOptions>
+
+          <IonItem>
+            <IonLabel>Sliding Item with Start Options</IonLabel>
+          </IonItem>
+        </IonItemSliding>
+
+        <IonItemSliding>
+          <IonItemOptions side="start">
+            <IonItemOption color="success">Archive</IonItemOption>
+          </IonItemOptions>
+
+          <IonItem>
+            <IonLabel>Sliding Item with Start Options</IonLabel>
+          </IonItem>
+        </IonItemSliding>
+
+        <IonItemSliding>
+          <IonItemOptions side="start">
+            <IonItemOption color="success">Archive</IonItemOption>
+          </IonItemOptions>
+
+          <IonItem>
+            <IonLabel>Sliding Item with Start Options</IonLabel>
+          </IonItem>
+        </IonItemSliding>
+      </IonContent>
     </IonPage>
   );
 };

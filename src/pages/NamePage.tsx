@@ -6,12 +6,10 @@ import {
   IonPage,
   IonTitle,
   IonToolbar,
-  useIonRouter,
 } from "@ionic/react";
 import { useParams } from "react-router";
 
 const NamePage = () => {
-  const router = useIonRouter();
   const { name } = useParams<{ name: string }>();
 
   return (
@@ -22,13 +20,7 @@ const NamePage = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        {name === "one" ? (
-          <IonButton onClick={() => router.push("/two", undefined, "replace")}>
-            Navigate (replace) /two
-          </IonButton>
-        ) : (
-          <IonButton routerLink="/two/details">Navigate /two/details</IonButton>
-        )}
+        <IonButton routerLink="/details">Navigate /details</IonButton>
       </IonContent>
     </IonPage>
   );
